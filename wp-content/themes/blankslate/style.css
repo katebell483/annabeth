@@ -16,3 +16,159 @@ BlankSlate is distributed under the terms of the GNU GPL
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
 .sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+
+/* GEN */
+
+html, body {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#wrapper {
+	width: 960px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+/* SITE TITLE */
+
+#branding {
+	width: 100%;
+	overflow: auto;
+	padding: 25px 0px 20px 80px;
+	z-index: 10;
+	position: relative;
+}
+
+#site-title {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: Lucida Grande;
+	letter-spacing: 1px;
+	float: left;
+	background: lightyellow;
+	box-shadow: 0 0 50px 15px lightyellow;
+	padding: 10px;
+	margin-right: 40px;
+}
+
+#site-title h1 a {
+    color: #ff0000;
+	//color: #55A792;
+    text-decoration: none;
+}
+
+/* SITE DESCRIPTION/EMAIL */
+#site-description {
+	font-size: 12px;
+	background: #ff0000;
+	//background: #006000;
+	// background: #55A792;
+	color: white;
+	font-weight: 200;
+	float: left;
+	font-family: Lucida Grande;
+	margin-top: 10px;
+}
+
+/* NAV */
+
+#header .slide-nav {
+	font-family: lucida grande;
+	font-size: 30px;
+	line-height: 40px;
+	color: #ff0000;
+	position: absolute;
+	top: 30px;
+	right: 94px;
+	width: 100px;
+}
+
+
+#header .slide-nav .one {
+	border: 2px solid #ff0000;
+}
+
+/* PAINTINGS */
+#container {
+	margin-left: 40px;
+}
+
+#container .post {
+	width: 100%;
+	float: left
+}
+
+#container .post {
+	overflow: auto;
+}
+
+#container .post .wp-caption {
+	width: 293px !important;
+	width: 100% !important;
+	margin-right: 20px;
+}
+
+#container .post a {
+	float: left;
+	width: 400px;
+
+}
+
+#container .post img {
+	width: 100%;
+	height: auto;
+	//border: 3px solid blue;
+}
+
+#container .post img.painting-1 {
+	//border: 3px solid #0EC29A;	
+}
+
+#container .post img.painting-2 {
+}
+
+#container .post img.painting-3 {
+}
+
+/* CAPTIONS */
+.caption {
+	color: #ff0000;
+	//color: #55A792;
+	text-transform: uppercase;
+	font-family: Lucida Grande;
+	font-size: 30px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	position: absolute;
+	left: 460px;
+	bottom: 70px;
+}
+
+.post:nth-child(2) .caption {
+}
+
+.post:nth-child(3) .caption {
+}
+
+/* FOOTER */
+
+#sidebar {
+	color: #ff0000;
+	font-family: courier;
+	margin-left: 20px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	position: absolute;
+	bottom: 0px;
+	display: none;
+}
+
+#sidebar #text-2 {
+	width: 170px;
+	margin-bottom: 20px;
+}
+
