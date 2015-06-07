@@ -1,7 +1,8 @@
 <div class="clear"></div>
 </div>
 <footer id="footer" role="contentinfo">
-	<script>AMarks.init()</script>
+    <a class="news">news</a>
+	<script>aMarks.init()</script>
 </footer>
 </div>
 <?php wp_footer(); ?>

@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width" />
 <title><?php wp_title( ' | ', true, 'right' ); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
-<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/amarks.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/amarks.js"></script>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -17,15 +16,13 @@
 <div id="site-title"><?php if ( ! is_singular() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'blankslate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( ! is_singular() ) { echo '</h1>'; } ?></div>
 <div id="site-description"><?php bloginfo( 'description' ); ?></div>
 </section>
-<div class="slide-nav">
-	<span class="one">1</span>
-	<span class="two">2</span>
-	<span class="three">3</span>
-	<span class="four">4</span>
+<?php get_sidebar(); ?>
+<div id="about"></div>
+<div class="info">
+    <span>Blue Push</span> 
+    <span>53 x 59 in.</span> 
+    <span>oil + latex paint on canvas</span> 
 </div>
-
-<!--<nav id="menu" role="navigation">
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-</nav>-->
+<img class="next" src="http://45.56.121.36/wp-content/uploads/2015/05/1433112317_arrows_slim_right.png"/>
 </header>
 <div id="container">
