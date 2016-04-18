@@ -39,6 +39,17 @@ var aMarks = {
                 $("#site-description").show();
             });
 
+            // apply mobile styles
+            if(aMarks.isMobile()) $("html").addClass("mobile");
+            
+            // apply ipad styles
+            if(aMarks.isIPad()) $("html").addClass("ipad");
+
+            // apply initial info
+            curImg = $(".post").first();
+            var info = curImg.find(".info").html().replace(/<br>/g, "");
+            $("#header .info").html(info);
+
             // switch paintings on arrow click
             $(".next").click(function() {
                 // get class of post
@@ -59,6 +70,14 @@ var aMarks = {
                 });
             });
         });
+    },
+
+    isMobile: function() {
+        if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) return true;
+    },
+        
+    isIPad: function() {
+        if(/iPad/i.test(navigator.userAgent)) return true;
     }
 }
 

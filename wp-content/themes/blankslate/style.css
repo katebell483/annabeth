@@ -44,27 +44,29 @@ html, body {
 #site-title {
 	font-size: 24px;
 	text-transform: capitalize;
-	font-family: 'arial narrow', sans-serif;
-	letter-spacing: 1px;
+	font-family: 'arial narrow', 'Helvetica Neue Thin', arial, sans-serif;
+	letter-spacing: 1.2px;
     margin-bottom: 10px;
 }
 
 #site-title h1 a {
     color: #000;
     text-decoration: none;
-    letter-spacing: 1px;
 }
 
 /* SITE DESCRIPTION/EMAIL */
 #site-description {
 	font-size: 14px;
-	color: lightgray;
-	letter-spacing: 1px;
-	font-family: 'arial narrow', sans-serif;
+	color: #B0B2B5;
+	letter-spacing: 0.9px;
+	font-family: 'arial narrow', 'Helvetica Neue Thin', arial, sans-serif;
     display: inline-block;
     cursor: pointer;
 }
 
+#site-description:hover {
+    color: #e2e2e2 !important
+}    
 /* NAV */
 
 #header {
@@ -81,9 +83,9 @@ html, body {
 
 /* INFO */
 #header .info {
-	font-family: 'arial narrow', sans-serif;
+	font-family: 'arial narrow', 'Helvetica Neue Thin', arial, sans-serif;
     font-size: 14px;
-    color: lightgray;
+    color: #B0B2B5;
     position: absolute;
     bottom: 16px;
     left: 20px;
@@ -91,24 +93,28 @@ html, body {
 
 #header .info span {
 	margin-bottom: 4px;
-	letter-spacing: 1px;
+	letter-spacing: 0.9px;
     display: block;
 }
 
 #header .next {
     display: block;
-    opacity: 0.3;
+    opacity: 0.2;
     cursor: pointer;
-    width: 30px;
+    width: 35px;
     position: absolute;
     bottom: 10px;
     right: 20px;
 }
 
+#header .next:hover {
+    opacity: 0.1 !important;
+}
 
 /* PAINTINGS */
 #container {
-    height: 86%;
+    height: 82%;
+    width: 55%;
     min-height: 530px;
     overflow: hidden;
     position: absolute;
@@ -167,25 +173,6 @@ html, body {
 	height: 100%;
 }
 
-/* CAPTIONS */
-.caption {
-	display: none;
-	color: lightgray;
-	text-transform: uppercase;
-	font-family: 'arial narrow', sans-serif;
-	font-size: 26px;
-	letter-spacing: 1px;
-	position: absolute;
-	left: 420px;
-	bottom: 70px;
-}
-
-.post:nth-child(2) .caption {
-}
-
-.post:nth-child(3) .caption {
-}
-
 /* FOOTER */
 #footer {
     display: none;
@@ -197,8 +184,8 @@ html, body {
 
 /* ABOUT */
 #about {
-    font-family: 'arial narrow', sans-serif;
-    color: lightgray;
+    font-family: 'arial narrow', 'Helvetica Neue Thin', arial, sans-serif;
+    color: #B0B2B5;
     font-size: 14px;
     line-height: 16px;
     position: absolute;
@@ -208,7 +195,7 @@ html, body {
     -ms-transform: translate(-50%, -30%);
     -webkit-transform: translate(-50%, -30%);
     -moz-transform: translate(-50%, -30%);
-    letter-spacing: 1px;
+    letter-spacing: 0.9px;
     text-align: center;
     display: none;
 }
@@ -222,11 +209,18 @@ html, body {
     cursor: pointer;
 }
 
+#about img:hover {
+    opacity: 0.1; 
+}    
 #about a {
-    color: lightgray;
+    color: #B0B2B5;
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
+}
+
+#about a:hover {
+    color: #e2e2e2 !important
 }
 
 #about div {
@@ -234,21 +228,182 @@ html, body {
     margin-bottom: 20px;
 }
 
-#about .press, #about .contact {
-}
-
 #about .press-title, #about .contact-title {
-    display: block;
-    margin-bottom: 20px;
-    border-bottom: 1px solid lightgray;
-    width: 50px;
-    margin-left: 124px;
+    border-bottom: 1px solid #B0B2B5;
+    margin: 0px auto 20px auto;
+    display: inline-block;
+    padding: 0px 2px;
 }
 
 #about .press-title {
-    width: 80px;
-    margin-left: 108px;
-    margin-top: 40px;
+    margin: 40px auto 20px auto;
 }
+
+#about .email {
+    display: block;
+}    
+
+/* START MOBILE CSS */
+.mobile, .mobile body {
+    min-width: 0px;
+}
+
+.mobile #container {
+    display: block;
+    position: relative;
+    left: 0;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -mz-transform: none;
+    width: 100%;
+    min-width: 0px;
+    min-height: 0px;
+    max-height: calc(100% - 110px);
+    top: 55px;
+}
+
+.mobile .info {
+    display: none !important;
+}
+
+.mobile #branding {
+    padding: 15px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mobile #branding #site-title {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.mobile #branding #site-description {
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.mobile #header {
+    min-width: 0px;
+    min-height: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+.mobile .next {
+    width: 40px !important;
+    bottom: 5px !important;
+}
+
+.mobile #container .post .entry-content img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -mz-transform: translateY(-50%);
+}
+
+@media screen and (orientation:landscape) {
+
+    .mobile, .mobile body {
+        height: 500px;
+        overflow: auto;
+    }
+
+    .mobile #branding #site-title {
+        font-size: 12px;
+     }
+    
+    .mobile #branding #site-description {
+        font-size: 10px
+    }
+
+    .mobile #wrapper {
+        overflow: auto;
+    }
+
+    .mobile #header {
+        height: 500px;
+        position: absolute !important;
+    }
+
+    .mobile .next {
+        width: 30px !important;
+    }
+}
+
+/* BEGIN IPAD STYLES */
+
+.ipad, .ipad body {
+    overflow: auto;
+    min-width: 0px;
+    min-height: 0px
+}
+
+.ipad #wrapper {
+    overflow: auto;
+}
+
+.ipad #header {
+    min-height: 0px;
+    min-width: 0px;
+}
+
+.ipad #header #site-title {
+    font-size: 20px;
+}
+
+.ipad #header #site-description, .ipad .info {
+    font-size: 12px !Important;
+}
+
+.ipad .next {
+    width: 30px !important;
+}
+
+.ipad #container {
+    min-height: 0px;
+}
+
+@media screen and (orientation:portrait) {
+    .ipad #container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .ipad #container .post .entry-content img {
+        height: calc(100% - 220px);
+        position: absolute;
+        top: 49%;
+        transform: translate(-50%, -50%) !important;
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+    }
+    .ipad #header #site-title {
+        font-size: 26px;
+    }
+
+    .ipad #header #site-description, .ipad .info {
+        font-size: 16px !Important;
+    }
+
+    .ipad .next {
+        width: 35px !important;
+    }
+
+}
+
+
+
+
+
+
+
 
 

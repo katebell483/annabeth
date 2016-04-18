@@ -7,7 +7,10 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/amarks.js"></script>
+<link href="http://allfont.net/css/?fonts=arial-narrow" rel="stylesheet" type="text/css" />
 <?php wp_head(); ?>
+<link rel="icon" href="http://45.56.121.36/wp-content/uploads/2015/06/favicon-1.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://45.56.121.36/wp-content/uploads/2015/06/favicon-1.ico" type="image/x-icon" /
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
@@ -19,9 +22,7 @@
 <?php get_sidebar(); ?>
 <div id="about"></div>
 <div class="info">
-    <span>Blue Push</span> 
-    <span>53 x 59 in.</span> 
-    <span>oil + latex paint on canvas</span> 
+    <span>Installation View</span> 
 </div>
 <img class="next" src="http://45.56.121.36/wp-content/uploads/2015/05/1433112317_arrows_slim_right.png"/>
 </header>
