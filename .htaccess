@@ -21,3 +21,10 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+
+# BEGIN protect xmlrpc.php
+<files xmlrpc.php>
+order allow,deny
+deny from all
+</files>
+# END protect xmlrpc.php

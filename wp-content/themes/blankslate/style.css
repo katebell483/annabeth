@@ -57,7 +57,7 @@ html, body {
 /* SITE DESCRIPTION/EMAIL */
 #site-description {
 	font-size: 14px;
-	color: #B0B2B5;
+	color: #939393;
 	letter-spacing: 0.9px;
 	font-family: 'arial narrow', 'Helvetica Neue Thin', arial, sans-serif;
     display: inline-block;
@@ -65,7 +65,7 @@ html, body {
 }
 
 #site-description:hover {
-    color: #e2e2e2 !important
+    color: #B0B2B5 !important
 }    
 /* NAV */
 
@@ -85,7 +85,7 @@ html, body {
 #header .info {
 	font-family: 'arial narrow', 'Helvetica Neue Thin', arial, sans-serif;
     font-size: 14px;
-    color: #B0B2B5;
+    color: #939393;
     position: absolute;
     bottom: 16px;
     left: 20px;
@@ -99,16 +99,16 @@ html, body {
 
 #header .next {
     display: block;
-    opacity: 0.2;
+    opacity: 0.4;
     cursor: pointer;
     width: 35px;
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     right: 20px;
 }
 
 #header .next:hover {
-    opacity: 0.1 !important;
+    opacity: 0.2;
 }
 
 /* PAINTINGS */
@@ -185,7 +185,7 @@ html, body {
 /* ABOUT */
 #about {
     font-family: 'arial narrow', 'Helvetica Neue Thin', arial, sans-serif;
-    color: #B0B2B5;
+    color: #939393;
     font-size: 14px;
     line-height: 16px;
     position: absolute;
@@ -201,7 +201,7 @@ html, body {
 }
 
 #about img {
-    opacity: 0.4;
+    opacity: 0.6;
     position: absolute;
     top: -60px;
     right: 0px;
@@ -210,17 +210,17 @@ html, body {
 }
 
 #about img:hover {
-    opacity: 0.1; 
+    opacity: 0.4; 
 }    
 #about a {
-    color: #B0B2B5;
+    color: #939393;
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
 }
 
 #about a:hover {
-    color: #e2e2e2 !important
+    color: #B0B2B5 !important
 }
 
 #about div {
@@ -229,7 +229,7 @@ html, body {
 }
 
 #about .press-title, #about .contact-title {
-    border-bottom: 1px solid #B0B2B5;
+    border-bottom: 1px solid #939393;
     margin: 0px auto 20px auto;
     display: inline-block;
     padding: 0px 2px;
@@ -294,9 +294,12 @@ html, body {
     left: 0px;
 }
 
-.mobile .next {
-    width: 40px !important;
-    bottom: 5px !important;
+.mobile .next:active {
+    opacity: 0.2 !important;
+}
+
+.mobile .next:hover {
+    opacity: 0.4 !important;
 }
 
 .mobile #container .post .entry-content img {

@@ -9,8 +9,8 @@
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/amarks.js"></script>
 <link href="http://allfont.net/css/?fonts=arial-narrow" rel="stylesheet" type="text/css" />
 <?php wp_head(); ?>
-<link rel="icon" href="http://45.56.121.36/wp-content/uploads/2015/06/favicon-1.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="http://45.56.121.36/wp-content/uploads/2015/06/favicon-1.ico" type="image/x-icon" /
+<link rel="icon" href="http://annabethmarks.info/wp-content/uploads/2015/06/favicon-1.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://annabethmarks.info/wp-content/uploads/2015/06/favicon-1.ico" type="image/x-icon" /
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
@@ -24,6 +24,6 @@
 <div class="info">
     <span>Installation View</span> 
 </div>
-<img class="next" src="http://45.56.121.36/wp-content/uploads/2015/05/1433112317_arrows_slim_right.png"/>
+<img class="next" src="http://www.annabethmarks.info/wp-content/uploads/2015/05/1433112317_arrows_slim_right-e1433242906425.png"/>
 </header>
 <div id="container">
