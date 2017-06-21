@@ -47,7 +47,7 @@ var aMarks = {
 
             // apply initial info
             curImg = $(".post").first();
-            var info = curImg.find(".info").html().replace(/<br>/g, "");
+            var info = curImg.find(".post-info").html();
             $("#header .info").html(info);
 
             // switch paintings on arrow click
@@ -63,7 +63,7 @@ var aMarks = {
                                 curImg = $(".post").first();
                             }
                             curImg.fadeIn();
-                            var info = curImg.find(".info").html().replace(/<br>/g, "");
+                            var info = curImg.find(".post-info").html();
                             $("#header .info").html(info);
                         });
                    } 
