@@ -25,15 +25,14 @@ var aMarks = {
 
             // pad the container
             header_w = $(".menu-recent-container").width();
-            console.log(header_w);
-            $("#container").css("padding-left", header_w);
+            offset = parseInt($("#branding").css("left"));
+            $("#container").css("padding-left", header_w + offset);
 
             // format posts 
             aMarks.formatPosts();
 
             // and again on window resize
             $(window).resize(function() {
-                console.log("here");
                 aMarks.formatPosts()
             })
             
@@ -50,13 +49,13 @@ var aMarks = {
         container_w = container.width()
          
         // pad the container
-        console.log($("#recent-menu-full").css("display"))
         if($("#recent-menu-full").css("display") != "none") {
             padding_w = $("#recent-menu-full").width();
         } else {
             padding_w = $("#recent-title").width();
         }
-        $("#container").css("padding-left", padding_w);
+        offset = parseInt($("#branding").css("left"));
+        $("#container").css("padding-left", padding_w + offset);
 
         //container.width(container.width());
 

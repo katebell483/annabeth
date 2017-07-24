@@ -60,16 +60,12 @@ html, body {
     cursor: pointer;
 }
 
-#contact-link-mobile {
-    display: None;
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    cursor: pointer;
-}
-
 #contact-link-desktop:hover {
     color: #B0B2B5 !important
+}
+
+#contact-link-mobile {
+    display: None;
 }
 
 #branding {
@@ -211,9 +207,18 @@ html, body {
 
 
 @media screen and (max-width: 650px) {
+    #branding {
+        left: 10px;
+        top: 10px;
+    }
+
     #contact-link-mobile {
         display: Block;
         font-size: 14px;
+        position: fixed;
+        right: 10px;
+        top: 12px;
+        cursor: pointer;
     }
 
     #contact-link-desktop {
@@ -222,7 +227,7 @@ html, body {
 
     #mobile-clear-bar {
         display: block;
-        height: 60px;
+        height: 40px;
         position: fixed;
         width: 100%;
         background: white;
@@ -239,6 +244,7 @@ html, body {
 
     #recent-title {
         width: 60px;
+        margin-top: 0px !important;
     }
 
     #recent-title span {
@@ -284,7 +290,7 @@ html, body {
     }
 
     #site-title {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .menu, #recent-title {
