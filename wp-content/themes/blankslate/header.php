@@ -14,16 +14,21 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
+<a id="contact-link-mobile" class="contact-link" href="mailto:abmarks@gmail.com">contact</a>
 <header id="header" role="banner">
 <section id="branding">
 <div id="site-title"><?php if ( ! is_singular() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'blankslate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( ! is_singular() ) { echo '</h1>'; } ?></div>
-<div id="site-description"><?php bloginfo( 'description' ); ?></div>
+<div id="recent-menu-full">
+    <div id="recent-title">Recent:</div>
+    <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+</div>
+<div id="recent-menu-small">
+    <div id="recent-title"><span>Recent</span><img src="<?php echo esc_url( home_url( '/' ));?>wp-content/themes/blankslate/assets/dropdown_arrow.png"/></div>
+    <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+</div>
+<a id="contact-link-desktop" class="contact-link" href="mailto:abmarks@gmail.com">contact</a>
 </section>
 <?php get_sidebar(); ?>
-<div id="about"></div>
-<div class="info">
-    <span>Installation View</span> 
-</div>
-<img class="next" src="http://www.annabethmarks.info/wp-content/uploads/2015/05/1433112317_arrows_slim_right-e1433242906425.png"/>
 </header>
+<div id="mobile-clear-bar"></div>
 <div id="container">
